@@ -1,0 +1,54 @@
+body {
+  background-image: url("../images/background-min.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .wrapper {
+    width: $width - 50%;
+    min-width: 1024px;
+    @media only screen and (max-width: 1023px) {
+      min-width: 768px;
+    }
+    @media only screen and (max-width: 768px) {
+      min-width: 480px;
+    }
+    @media only screen and (max-width: 480px) {
+      min-width: 320px;
+    }
+    margin: 0 auto;
+    text-transform: uppercase;
+
+    .website {
+      margin: 20px auto 25px;
+      color: $SecondColor;
+      text-align: center;
+      @media only screen and (max-width: 1023px) {
+        font-size: 70%;
+      }
+      @media only screen and (max-width: 768px) {
+        font-size: 60%;
+      }
+    }
+
+    .top {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #38afe5;
+      position: fixed;
+      right: 20px;
+      bottom: 10px;
+      text-align: center;
+      @media only screen and (max-width: 1023px) {
+        right: 140px;
+        bottom: 10px;
+      }
+      @media only screen and (max-width: 768px) {
+        right: 160px;
+      }
+      @media only screen and (max-width: 768px) {
+        right: 100px;
+      }
+    }
+  }
+}

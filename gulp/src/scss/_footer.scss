@@ -1,0 +1,35 @@
+.footer {
+  height: 130px;
+  background-color: #30455b;
+  vertical-align: top;
+  margin: 0 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-family: $MainFontFamily;
+  @media only screen and (max-width: 480px) {
+    font-size: 80%;
+  }
+
+  &-nav__item {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  &-nav__link {
+    text-decoration: none;
+    color: $second-color;
+  }
+
+  &-nav__list {
+    color: $second-color;
+    line-height: 2;
+
+    &_size-s {
+      line-height: 1.2;
+      font-size: 80%;
+      padding-top: 5px;
+    }
+  }
+}
